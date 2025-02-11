@@ -184,7 +184,7 @@ def extract_features(url):
 
 def predict_phishing(features):
     # Load the model
-    with open(r"C:\Users\Admin\phishing_detector\mlp_model (1).pkl", 'rb') as file:
+    with open(r"C:\Users\Admin\phishing_detector\mlp_model.pkl", 'rb') as file:
         loaded_model = pickle.load(file)
 
     # Make predictions
