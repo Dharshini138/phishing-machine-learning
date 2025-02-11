@@ -187,7 +187,7 @@ def predict_phishing(features):
     # Load the model
     absolute_path=os.path.abspath('mlp_model.pkl') #adjust if its inside a folder
     with open(absolute_path, 'rb') as file:
-    loaded_model = pickle.load(file)
+       loaded_model = pickle.load(file)
 
     # Make predictions
     new_data = np.array([features])
