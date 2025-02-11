@@ -190,7 +190,7 @@ def predict_phishing(features):
         print(f"error:file not found at{model_path}")
     else:   
         with open(r"C:\Users\Admin\phishing_detector\mlp_model.pkl", 'rb') as file:
-        loaded_model = pickle.load(file)
+           loaded_model = pickle.load(file)
 
     # Make predictions
     new_data = np.array([features])
