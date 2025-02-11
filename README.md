@@ -1,9 +1,9 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 phishbuster
 ```
 ⬆️ (Replace above with your app's name)
 ```
 
-Description of the app ...
+THIS IS  AN MACHINE LEARNING TOOL TO DETECT THE SPOOFED WEB URLS'S THAT JUST STOPS YOU FROM BECOMING A PREY TO THE DARK SPAMMERS...
 
 ## Demo App
 
