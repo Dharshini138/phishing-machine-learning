@@ -185,12 +185,9 @@ def extract_features(url):
 
 def predict_phishing(features):
     # Load the model
-    model_path="mlp_model.pkl" #adjust if its inside a folder
-    if not os.path.exists(model_path):
-        print(f"error:file not found at{model_path}")
-    else:   
-        with open(r"C:\Users\Admin\phishing_detector\mlp_model.pkl", 'rb') as file:
-           loaded_model = pickle.load(file)
+    absolute_path=os.path.abspath('mlp_model.pkl') #adjust if its inside a folder
+    with open(absolute_path, 'rb') as file:
+    loaded_model = pickle.load(file)
 
     # Make predictions
     new_data = np.array([features])
