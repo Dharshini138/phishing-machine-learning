@@ -8,7 +8,7 @@ import pickle
 
 # Define the path to the data file
 current_dir = os.path.dirname(os.path.abspath(__file__))
-data_file_path = "C:\Users\Admin\Downloads\5.urldata.csv"
+data_file_path = r"C:\Users\Admin\Downloads\5.urldata.csv"
 
 # Load the dataset
 data = pd.read_csv(data_file_path)
@@ -43,5 +43,5 @@ gb_accuracy = accuracy_score(y_test, gb_pred)
 print(f'Gradient Boosting Accuracy: {gb_accuracy * 100:.2f}%')
 
 # Save the XGBoost model
-with open(os.path.join(current_dir, 'xgboost_model.pkl'), 'wb') as file:
+with open(r"C:\Users\Admin\Downloads\mlp_model.pkl", 'wb') as file:
     pickle.dump(gb_model, file)
