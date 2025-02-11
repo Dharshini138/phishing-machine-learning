@@ -7,6 +7,7 @@ import requests
 from urllib.parse import urlparse
 from datetime import datetime
 import re
+import os
 from requests.exceptions import SSLError, Timeout  # Add this import for SSLError and Timeout
 
 
@@ -184,7 +185,11 @@ def extract_features(url):
 
 def predict_phishing(features):
     # Load the model
-    with open(r"C:\Users\Admin\phishing_detector\mlp_model.pkl", 'rb') as file:
+    model_path="mlp_model.pkl" #adjust if its inside a folder
+    if not os.path.exists(model_path):
+        print(f"error:file not found at{model_path}")
+    else:   
+        with open(r"C:\Users\Admin\phishing_detector\mlp_model.pkl", 'rb') as file:
         loaded_model = pickle.load(file)
 
     # Make predictions
