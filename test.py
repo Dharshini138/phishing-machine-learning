@@ -43,5 +43,5 @@ gb_accuracy = accuracy_score(y_test, gb_pred)
 print(f'Gradient Boosting Accuracy: {gb_accuracy * 100:.2f}%')
 
 # Save the XGBoost model
-with open(r"C:\Users\Admin\Downloads\mlp_model (1).pkl", 'wb') as file:
+with open(r"C:\Users\Admin\phishing_detector\mlp_model (1).pkl", 'wb') as file:
     pickle.dump(gb_model, file)
