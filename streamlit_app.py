@@ -196,7 +196,7 @@ def predict_phishing(features):
     return prediction
 
 def main():
-    st.title('Phishing URL Detector)
+    st.title('Phishing URL Detector')
     st.write("Enter or Paste a URL to check if it's phishing or not.")
     
     # Input URL
